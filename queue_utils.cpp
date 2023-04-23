@@ -117,12 +117,12 @@ void writeCharacteristic()
         if (weightResult != NULL)
         {
             ble->writeCharacteristic("Change Weight");
-                delay(1);
+            delay(1);
         }
         if (servoCompleted != NULL)
         {
             ble->writeCharacteristic("Moved Servo");
-                delay(1);
+            delay(1);
         }
     }
     delay(1);
@@ -131,7 +131,7 @@ void writeCharacteristic()
 void initServo()
 {
     void (*ptr)(SERVO_STATE) = &servoEvent;
-    servo = new Servo(ptr);
+    servo = new ServoUtils(ptr);
     servo->initServo();
 }
 

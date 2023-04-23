@@ -1,6 +1,7 @@
 #line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/.vscode/settings.json"
 {
     "files.associations": {
-        "queue": "cpp"
+        "queue": "cpp",
+        "__locale": "cpp"
     }
 }
