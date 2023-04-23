@@ -5,6 +5,8 @@
 #include <BLEServer.h>
 #include <BLEUtils.h>
 #include <BLE2902.h>
+#include <esp32-hal-gpio.h>
+#include <Arduino.h>
 
 typedef enum
 {

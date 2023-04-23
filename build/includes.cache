@@ -11,36 +11,26 @@
   },
   {
     "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/IoT_medicine_notebook_2.ino.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/ble.cpp",
-    "Include": "BLEDevice.h",
-    "Includepath": "/Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src"
-  },
-  {
-    "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/ble.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/queue_utils.cpp",
     "Include": "Servo.h",
     "Includepath": "/Users/takashi/Documents/Arduino/libraries/ServoESP32-1.0.3/src"
   },
   {
-    "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/queue_utils.cpp",
+    "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/IoT_medicine_notebook_2.ino.cpp",
+    "Include": "BLEDevice.h",
+    "Includepath": "/Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src"
+  },
+  {
+    "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/IoT_medicine_notebook_2.ino.cpp",
     "Include": "HX711.h",
     "Includepath": "/Users/takashi/Documents/Arduino/libraries/HX711/src"
   },
   {
-    "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/queue_utils.cpp",
+    "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/IoT_medicine_notebook_2.ino.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/servo.cpp",
+    "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/ble.cpp",
     "Include": "",
     "Includepath": null
   },
@@ -51,6 +41,11 @@
   },
   {
     "Sourcefile": "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/weight.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/takashi/Documents/Arduino/libraries/ServoESP32-1.0.3/src/Servo.cpp",
     "Include": "",
     "Includepath": null
   },
@@ -196,11 +191,6 @@
   },
   {
     "Sourcefile": "/Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/GeneralUtils.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/takashi/Documents/Arduino/libraries/ServoESP32-1.0.3/src/Servo.cpp",
     "Include": "",
     "Includepath": null
   },

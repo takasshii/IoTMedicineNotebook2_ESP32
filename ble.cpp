@@ -47,7 +47,7 @@ class MyCallbacks : public BLECharacteristicCallbacks
 
         if (strcmp(value.c_str(), "C0A0") == 0)
         {
-            instance->callBackEvent(INITIAL_COMPLETED_WEIGHT);
+            instance->callBackEvent(INITIAL_READ_CHARACTERISTIC);
             digitalWrite(RED_LED, HIGH);
             return;
         }

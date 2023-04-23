@@ -1,10 +1,14 @@
-/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/IoT_medicine_notebook_2.ino.cpp.o: \
- /Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/IoT_medicine_notebook_2.ino.cpp \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h \
+/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/ble.cpp.o: \
+ /Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/ble.cpp \
+ /Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/ble.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEDevice.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/config/sdkconfig.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/bt/esp_gap_ble_api.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdint.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/machine/_default_types.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/features.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/_intsup.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_err.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdio.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/_ansi.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/newlib.h \
@@ -21,15 +25,13 @@
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/machine/types.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/sched.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/stdio.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdlib.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/machine/stdlib.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/alloca.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/string.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/string.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/inttypes.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOS.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/assert.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/bt/esp_bt_defs.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/bt/esp_gattc_api.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/bt/esp_gatt_defs.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/bt/esp_bt.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_task.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOSConfig.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/config/sdkconfig.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/xtensa_config.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/xtensa/hal.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/xtensa/config/core.h \
@@ -40,10 +42,22 @@
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/xtensa_context.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/xtensa/corebits.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/xtensa/xtruntime-frames.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdlib.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/machine/stdlib.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/alloca.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/rom/ets_sys.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_assert.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/assert.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEServer.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/bt/esp_gatts_api.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/string.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/string.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEUUID.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/bt/esp_gatt_defs.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEAdvertising.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/FreeRTOS.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOS.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOSConfig.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/projdefs.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/portable.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/deprecated_definitions.h \
@@ -54,7 +68,6 @@
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/xtensa/xtruntime-core-state.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_crosscore_int.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_timer.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_err.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/heap/esp_heap_caps.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/heap/multi_heap.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc_memory_layout.h \
@@ -86,7 +99,27 @@
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/list.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/semphr.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/queue.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp_ringbuf/freertos/ringbuf.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/queue.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLECharacteristic.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEDescriptor.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEValue.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEService.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLESecurity.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEAddress.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEClient.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLERemoteService.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLERemoteCharacteristic.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLERemoteDescriptor.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEAdvertisedDevice.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEScan.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEUtils.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEServer.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLEUtils.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLE2902.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-gpio.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/inttypes.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/math.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-log.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/log/esp_log.h \
@@ -109,6 +142,7 @@
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-bt.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-psram.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-cpu.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp8266-compat.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/stdlib_noniso.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/binary.h \
@@ -130,5 +164,4 @@
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Esp.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/spi_flash/esp_partition.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/spi_flash/esp_spi_flash.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/variants/esp32/pins_arduino.h \
- /Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/queue_utils.h
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/variants/esp32/pins_arduino.h
