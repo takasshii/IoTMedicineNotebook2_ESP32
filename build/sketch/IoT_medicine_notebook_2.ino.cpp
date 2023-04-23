@@ -2,7 +2,7 @@
 #line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 #include "queue/queue_utils.h"
 
-Queue *queue;
+QueueUtils *queue;
 
 #line 5 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void setup();
@@ -23,7 +23,7 @@ void loop()
 
 void initQueue()
 {
-  queue = new Queue();
+  queue = new QueueUtils();
   queue->initQueue();
 }
 

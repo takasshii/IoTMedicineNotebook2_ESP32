@@ -1,6 +1,6 @@
 #include "queue/queue_utils.h"
 
-Queue *queue;
+QueueUtils *queue;
 
 void setup()
 {
@@ -14,6 +14,6 @@ void loop()
 
 void initQueue()
 {
-  queue = new Queue();
+  queue = new QueueUtils();
   queue->initQueue();
 }

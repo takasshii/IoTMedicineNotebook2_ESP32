@@ -10,7 +10,7 @@ TaskHandle_t thp[2];
 QueueHandle_t xQueue_1;
 QueueHandle_t xQueue_2;
 
-class Queue
+class QueueUtils
 {
 private:
     TaskHandle_t thp[2];
@@ -18,7 +18,7 @@ private:
     QueueHandle_t xQueue_2;
 
 public:
-    Queue();
+    QueueUtils();
     void initQueue();
 }
 

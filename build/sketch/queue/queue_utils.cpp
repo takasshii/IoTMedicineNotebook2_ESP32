@@ -4,18 +4,18 @@
 #include "ble/ble.h"
 #include "weight/weight.h"
 
-static Queue *instance = NULL;
+static QueueUtils *instance = NULL;
 
 Weight *weight;
 BLE *ble;
 Servo *servo;
 
-Queue::Queue()
+QueueUtils::QueueUtils()
 {
     instance = this
 }
 
-void Queue::initQueue()
+void QueueUtils::initQueue()
 {
     initWeight();
     initBLE();

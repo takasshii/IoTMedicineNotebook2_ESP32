@@ -1,4 +1,3 @@
-#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/queue/queue_utils.h"
 #ifndef QUEUE_UTILS_H
 #define QUEUE_UTILS_H
 
@@ -11,7 +10,7 @@ TaskHandle_t thp[2];
 QueueHandle_t xQueue_1;
 QueueHandle_t xQueue_2;
 
-class Queue
+class QueueUtils
 {
 private:
     TaskHandle_t thp[2];
@@ -19,7 +18,7 @@ private:
     QueueHandle_t xQueue_2;
 
 public:
-    Queue();
+    QueueUtils();
     void initQueue();
 }
 
