@@ -1,5 +1,7 @@
-/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/IoT_medicine_notebook_2.ino.cpp.o: \
- /Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/IoT_medicine_notebook_2.ino.cpp \
+/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/servo_utils.cpp.o: \
+ /Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/servo_utils.cpp \
+ /Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/servo_utils.h \
+ /Users/takashi/Documents/Arduino/libraries/ServoESP32-1.0.3/src/Servo.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdint.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/machine/_default_types.h \
@@ -130,5 +132,4 @@
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Esp.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/spi_flash/esp_partition.h \
  /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/spi_flash/esp_spi_flash.h \
- /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/variants/esp32/pins_arduino.h \
- /Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/sketch/queue_utils.h
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/variants/esp32/pins_arduino.h

@@ -1,19 +1,19 @@
-#include "servo.h"
+#include "servo_utils.h"
 
 const int SERVO_PIN_1 = 15;
 const int SERVO_PIN_2 = 16;
 
-static Servo *instance = NULL;
+static ServoUtils *instance = NULL;
 
-Servo::Servo() {}
+ServoUtils::ServoUtils() {}
 
-Servo::Servo(FuncPtrInt f)
+ServoUtils::ServoUtils(FuncPtrInt f)
 {
   instance = this;
   callBackEvent = f;
 }
 
-double Servo::movingServo()
+void ServoUtils::movingServo()
 {
   instance->callBackEvent(MOVING_SERVO);
   servo1.write(0);
@@ -27,10 +27,10 @@ double Servo::movingServo()
   servo1.write(0);
   servo2.write(0);
   delay(1000);
-  instance->callBackEvent(COMPLETED_SERVO)
+  instance->callBackEvent(COMPLETED_SERVO);
 }
 
-void Servo::initServo()
+void ServoUtils::initServo()
 {
   servo1.attach(SERVO_PIN_1);
   servo2.attach(SERVO_PIN_2);

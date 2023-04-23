@@ -1,5 +1,5 @@
-#ifndef SERVO_H_
-#define SERVO_H_
+#ifndef SERVO_UTILS_H_
+#define SERVO_UTILS_H_
 
 #include <Servo.h>
 
@@ -10,7 +10,7 @@ typedef enum
     COMPLETED_SERVO,
 } SERVO_STATE;
 
-class Servo
+class ServoUtils
 {
 private:
     Servo servo1;
@@ -19,10 +19,10 @@ private:
 
 public:
     FuncPtrInt callBackEvent;
-    Servo();
-    Servo(FuncPtrInt f);
+    ServoUtils();
+    ServoUtils(FuncPtrInt f);
     void initServo();
-    double movingServo();
+    void movingServo();
 };
 
 #endif

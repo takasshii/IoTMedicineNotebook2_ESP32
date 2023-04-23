@@ -63,8 +63,6 @@ void BLE::initBLE()
 {
     instance->callBackEvent(INITIAL_BLE_SERVER);
     pinMode(RED_LED, OUTPUT);
-    pinMode(YELLOW_LED, OUTPUT);
-    pinMode(WHITE_LED, OUTPUT);
 
     BLEDevice::init(DEVICE_NAME);
     pServer = BLEDevice::createServer();

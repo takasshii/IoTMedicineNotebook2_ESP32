@@ -1,22 +1,26 @@
 #line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/queue_utils.cpp"
 #include "queue_utils.h"
 
-#include "servo.h"
+#include "servo_utils.h"
 #include "ble.h"
 #include "weight.h"
 
 static QueueUtils *instance = NULL;
 
+TaskHandle_t thp[2];
+QueueHandle_t xQueue_1;
+QueueHandle_t xQueue_2;
+
 Weight *weight;
 BLE *ble;
-Servo *servo;
+ServoUtils *servo;
 
 QueueUtils::QueueUtils()
 {
-    instance = this
+    instance = this;
 }
 
-void QueueUtils::initQueue
+void QueueUtils::initQueue()
 {
     initWeight();
     initBLE();
@@ -93,7 +97,8 @@ void bleEvent(BLE_STATE event)
         break;
     case READ_SERVO_COMMAND:
         // Servoを動かす
-        servo->movingServo() break;
+        servo->movingServo();
+        break;
     case SEND_COMPLETED_COMMAND:
         break;
     default:
@@ -104,20 +109,20 @@ void bleEvent(BLE_STATE event)
 void writeCharacteristic()
 {
     double weightResult;
-    int servoCompleted
+    int servoCompleted;
 
-        while (1)
+    while (1)
     {
         xQueueReceive(xQueue_1, &weightResult, portMAX_DELAY);
         xQueueReceive(xQueue_2, &servoCompleted, portMAX_DELAY);
         if (weightResult != NULL)
         {
-            ble->writeCharacteristic("Change Weight")
+            ble->writeCharacteristic("Change Weight");
                 delay(1);
         }
         if (servoCompleted != NULL)
         {
-            ble->writeCharacteristic("Moved Servo")
+            ble->writeCharacteristic("Moved Servo");
                 delay(1);
         }
     }
