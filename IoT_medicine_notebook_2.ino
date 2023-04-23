@@ -140,6 +140,7 @@ void initServo()
 // 　WeightEventのCallback
 void servoEvent(SERVO_STATE event)
 {
+  int sendCompleted = 1;
   switch (event)
   {
   case INITIAL_COMPLETED_SERVO:
@@ -148,7 +149,7 @@ void servoEvent(SERVO_STATE event)
     break;
   case COMPLETED_SERVO:
     // 完了したことをBLEサーバーで送信するために1を送信する
-    xQueueSend(xQueue_2, 1, 0);
+    xQueueSend(xQueue_2, &sendCompleted, 0);
     break;
   default:
     break;
