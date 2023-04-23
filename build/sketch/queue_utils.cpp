@@ -58,8 +58,9 @@ void weightEvent(WEIGHT_STATE event)
     }
 }
 
-void sendWeight(float *result)
+void sendWeight(void *args)
 {
+    double result;
     while (1)
     {
         result = weight->measureWeight();
@@ -106,7 +107,7 @@ void bleEvent(BLE_STATE event)
     }
 }
 
-void writeCharacteristic()
+void writeCharacteristic(void *args)
 {
     double weightResult;
     int servoCompleted;
