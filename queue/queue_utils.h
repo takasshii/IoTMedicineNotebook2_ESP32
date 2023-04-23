@@ -18,6 +18,7 @@ private:
     QueueHandle_t xQueue_2;
 
 public:
+    Queue();
     void initQueue();
 }
 
