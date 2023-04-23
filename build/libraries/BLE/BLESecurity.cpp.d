@@ -1,0 +1,28 @@
+/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/build/libraries/BLE/BLESecurity.cpp.o: \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLESecurity.cpp \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/libraries/BLE/src/BLESecurity.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/config/sdkconfig.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/bt/esp_gap_ble_api.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdint.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/machine/_default_types.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/features.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/_intsup.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_err.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdio.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/_ansi.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/newlib.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/config.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/machine/ieeefp.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/xtensa/config/core-isa.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/cdefs.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/reent.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/_ansi.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/_types.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/machine/_types.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/lock.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/types.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/machine/types.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/sched.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/sys/stdio.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/assert.h \
+ /Users/takashi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/bt/esp_bt_defs.h

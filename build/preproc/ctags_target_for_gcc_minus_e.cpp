@@ -85,7 +85,7 @@ void sendWeight(void *args)
   }
 }
 
-void initBle()
+void initBLE()
 {
   void (*ptr)(BLE_STATE) = &bleEvent;
   ble = new BLE(ptr);

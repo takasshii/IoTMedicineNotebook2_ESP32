@@ -25,7 +25,7 @@ void weightEvent(WEIGHT_STATE event);
 #line 61 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void sendWeight(void *args);
 #line 75 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
-void initBle();
+void initBLE();
 #line 83 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void bleEvent(BLE_STATE event);
 #line 110 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
@@ -97,7 +97,7 @@ void sendWeight(void *args)
   }
 }
 
-void initBle()
+void initBLE()
 {
   void (*ptr)(BLE_STATE) = &bleEvent;
   ble = new BLE(ptr);
