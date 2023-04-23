@@ -1,4 +1,4 @@
-#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/weight/weight.h"
+#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/weight.h"
 #ifndef WEIGHT_H_
 #define WEIGHT_H_
 

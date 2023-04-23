@@ -1,4 +1,4 @@
-#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/servo/servo.h"
+#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/servo.h"
 #ifndef SERVO_H_
 #define SERVO_H_
 

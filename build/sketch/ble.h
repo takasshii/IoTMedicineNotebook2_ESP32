@@ -1,4 +1,4 @@
-#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/ble/ble.h"
+#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/ble.h"
 #ifndef BLE_H_
 #define BLE_H_
 

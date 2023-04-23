@@ -20,6 +20,6 @@ private:
 public:
     QueueUtils();
     void initQueue();
-}
+};
 
 #endif /* QUEUE_UTILS_H */

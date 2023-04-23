@@ -1,4 +1,4 @@
-#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/ble/ble.cpp"
+#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/ble.cpp"
 #include "ble.h"
 
 #define SERVICE_UUID "0000180f-0000-1000-8000-00805f9b34fb"

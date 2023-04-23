@@ -1,8 +1,8 @@
-#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/queue/queue_utils.cpp"
 #include "queue_utils.h"
-#include "servo/servo.h"
-#include "ble/ble.h"
-#include "weight/weight.h"
+
+#include "servo.h"
+#include "ble.h"
+#include "weight.h"
 
 static QueueUtils *instance = NULL;
 
@@ -15,7 +15,7 @@ QueueUtils::QueueUtils()
     instance = this
 }
 
-void QueueUtils::initQueue()
+void QueueUtils::initQueue
 {
     initWeight();
     initBLE();

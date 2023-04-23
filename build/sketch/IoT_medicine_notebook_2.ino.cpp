@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
-#include "queue/queue_utils.h"
+#include "queue_utils.h"
 
 QueueUtils *queue;
 

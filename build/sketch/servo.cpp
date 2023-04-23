@@ -1,4 +1,4 @@
-#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/servo/servo.cpp"
+#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/servo.cpp"
 #include "servo.h"
 
 const int SERVO_PIN_1 = 15;

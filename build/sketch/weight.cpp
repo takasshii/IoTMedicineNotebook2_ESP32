@@ -1,4 +1,4 @@
-#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/weight/weight.cpp"
+#line 1 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/weight.cpp"
 #include "weight.h"
 
 #define CALIBRATION 434.22 // キャリブレーション値
