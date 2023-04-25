@@ -16,15 +16,15 @@ ServoUtils::ServoUtils(FuncPtrInt f)
 void ServoUtils::movingServo()
 {
   instance->callBackEvent(MOVING_SERVO);
-  servo1.write(0);
+  servo1.write(120);
   servo2.write(0);
   delay(1000);
 
-  servo1.write(180);
-  servo2.write(180);
+  servo1.write(0);
+  servo2.write(120);
   delay(1000);
 
-  servo1.write(0);
+  servo1.write(120);
   servo2.write(0);
   delay(1000);
   instance->callBackEvent(COMPLETED_SERVO);

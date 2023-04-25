@@ -5,8 +5,6 @@
 #define CHARACTERISTIC_UUID "00002a19-0000-1000-8000-00805f9b34fb"
 #define DEVICE_NAME "ESP_32"
 
-const int RED_LED = 23;
-
 static BLE *instance = NULL;
 
 BLE::BLE() {}
@@ -29,7 +27,6 @@ class MyServerCallbacks : public BLEServerCallbacks
     void onDisconnect(BLEServer *pServer)
     {
         instance->callBackEvent(DISCONNECTED_BLE_SERVER);
-        digitalWrite(RED_LED, LOW);
         Serial.println("Disconnected");
     }
 };
@@ -49,7 +46,6 @@ class MyCallbacks : public BLECharacteristicCallbacks
         if (strcmp(value.c_str(), "C0A0") == 0)
         {
             instance->callBackEvent(INITIAL_READ_CHARACTERISTIC);
-            digitalWrite(RED_LED, HIGH);
             return;
         }
         if (strcmp(value.c_str(), "C0A1") == 0)
@@ -63,7 +59,6 @@ class MyCallbacks : public BLECharacteristicCallbacks
 void BLE::initBLE()
 {
     instance->callBackEvent(INITIAL_BLE_SERVER);
-    pinMode(RED_LED, OUTPUT);
 
     BLEDevice::init(DEVICE_NAME);
     pServer = BLEDevice::createServer();

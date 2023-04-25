@@ -6,6 +6,8 @@ TaskHandle_t thp[2];
 QueueHandle_t xQueue_1;
 QueueHandle_t xQueue_2;
 
+const int RED_LED = 5;
+
 Weight *weight;
 BLE *ble;
 ServoUtils *servo;
@@ -13,6 +15,7 @@ ServoUtils *servo;
 void setup()
 {
   Serial.begin(115200);
+  pinMode(RED_LED, OUTPUT);
   initQueue();
 }
 
@@ -48,10 +51,13 @@ void weightEvent(WEIGHT_STATE event)
   switch (event)
   {
   case INITIAL_COMPLETED_WEIGHT:
+    Serial.println("INITIAL_COMPLETED_WEIGHT");
     break;
   case MEASURING_WEIGHT:
+    Serial.println("MEASURING_WEIGHT");
     break;
   case COMPLETED_WEIGHT:
+    Serial.println("COMPLETED_WEIGHT");
     break;
   default:
     break;
@@ -85,22 +91,30 @@ void bleEvent(BLE_STATE event)
   switch (event)
   {
   case INITIAL_BLE_SERVER:
+    Serial.println("INITIAL_BLE_SERVER");
     break;
   case COMPLETE_BLE_SERVER:
+    Serial.println("COMPLETE_BLE_SERVER");
     break;
   case CONNECTED_BLE_SERVER:
+    Serial.println("CONNECTED_BLE_SERVER");
     break;
   case DISCONNECTED_BLE_SERVER:
+    Serial.println("DISCONNECTED_BLE_SERVER");
+    digitalWrite(RED_LED, LOW);
     break;
   case INITIAL_READ_CHARACTERISTIC:
     // LEDを点灯させる
-
+    Serial.println("INITIAL_READ_CHARACTERISTIC");
+    digitalWrite(RED_LED, HIGH);
     break;
   case READ_SERVO_COMMAND:
+    Serial.println("READ_SERVO_COMMAND");
     // Servoを動かす
     servo->movingServo();
     break;
   case SEND_COMPLETED_COMMAND:
+    Serial.println("SEND_COMPLETED_COMMAND");
     break;
   default:
     break;
@@ -144,10 +158,13 @@ void servoEvent(SERVO_STATE event)
   switch (event)
   {
   case INITIAL_COMPLETED_SERVO:
+    Serial.println("INITIAL_COMPLETED_SERVO");
     break;
   case MOVING_SERVO:
+    Serial.println("MOVING_SERVO");
     break;
   case COMPLETED_SERVO:
+    Serial.println("COMPLETED_SERVO");
     // 完了したことをBLEサーバーで送信するために1を送信する
     xQueueSend(xQueue_2, &sendCompleted, 0);
     break;

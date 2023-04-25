@@ -8,36 +8,39 @@ TaskHandle_t thp[2];
 QueueHandle_t xQueue_1;
 QueueHandle_t xQueue_2;
 
+const int RED_LED = 5;
+
 Weight *weight;
 BLE *ble;
 ServoUtils *servo;
 
-#line 13 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 15 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void setup();
-#line 19 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 22 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void loop();
-#line 23 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 26 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void initQueue();
-#line 38 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 41 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void initWeight();
-#line 46 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 49 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void weightEvent(WEIGHT_STATE event);
-#line 61 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 67 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void sendWeight(void *args);
-#line 75 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 81 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void initBLE();
-#line 83 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 89 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void bleEvent(BLE_STATE event);
-#line 110 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 124 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void writeCharacteristic(void *args);
-#line 133 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 147 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void initServo();
-#line 141 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 155 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void servoEvent(SERVO_STATE event);
-#line 13 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
+#line 15 "/Users/takashi/Documents/Arduino/IoT_medicine_notebook_2/IoT_medicine_notebook_2.ino"
 void setup()
 {
   Serial.begin(115200);
+  pinMode(RED_LED, OUTPUT);
   initQueue();
 }
 
@@ -73,10 +76,13 @@ void weightEvent(WEIGHT_STATE event)
   switch (event)
   {
   case INITIAL_COMPLETED_WEIGHT:
+    Serial.println("INITIAL_COMPLETED_WEIGHT");
     break;
   case MEASURING_WEIGHT:
+    Serial.println("MEASURING_WEIGHT");
     break;
   case COMPLETED_WEIGHT:
+    Serial.println("COMPLETED_WEIGHT");
     break;
   default:
     break;
@@ -110,22 +116,30 @@ void bleEvent(BLE_STATE event)
   switch (event)
   {
   case INITIAL_BLE_SERVER:
+    Serial.println("INITIAL_BLE_SERVER");
     break;
   case COMPLETE_BLE_SERVER:
+    Serial.println("COMPLETE_BLE_SERVER");
     break;
   case CONNECTED_BLE_SERVER:
+    Serial.println("CONNECTED_BLE_SERVER");
     break;
   case DISCONNECTED_BLE_SERVER:
+    Serial.println("DISCONNECTED_BLE_SERVER");
+    digitalWrite(RED_LED, LOW);
     break;
   case INITIAL_READ_CHARACTERISTIC:
     // LEDを点灯させる
-
+    Serial.println("INITIAL_READ_CHARACTERISTIC");
+    digitalWrite(RED_LED, HIGH);
     break;
   case READ_SERVO_COMMAND:
+    Serial.println("READ_SERVO_COMMAND");
     // Servoを動かす
     servo->movingServo();
     break;
   case SEND_COMPLETED_COMMAND:
+    Serial.println("SEND_COMPLETED_COMMAND");
     break;
   default:
     break;
@@ -169,10 +183,13 @@ void servoEvent(SERVO_STATE event)
   switch (event)
   {
   case INITIAL_COMPLETED_SERVO:
+    Serial.println("INITIAL_COMPLETED_SERVO");
     break;
   case MOVING_SERVO:
+    Serial.println("MOVING_SERVO");
     break;
   case COMPLETED_SERVO:
+    Serial.println("COMPLETED_SERVO");
     // 完了したことをBLEサーバーで送信するために1を送信する
     xQueueSend(xQueue_2, &sendCompleted, 0);
     break;
